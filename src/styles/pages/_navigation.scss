@@ -98,10 +98,6 @@
 
 @media (max-width: 768px) {
 
-    html {
-        font-size: 14px;
-    }
-
     .hamburger {
         display: block;
         color: white;
@@ -117,6 +113,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: 0;
 
         .sign-in,
         .sign-up {

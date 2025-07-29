@@ -9,13 +9,17 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
         z-index: 1;
     }
 
     >* {
         position: relative;
         z-index: 2;
+    }
+
+    >.nav {
+        z-index: 3;
     }
 
     .hero-content {
@@ -26,12 +30,11 @@
         gap: 30px;
         padding-left: 70px;
         padding-right: 70px;
-        // align-items: center;
+
 
         @media (max-width: 785px) {
             padding-left: 30px;
             padding-right: 30px;
-            // align-items: center;
         }
 
         h1 {
