@@ -125,26 +125,60 @@
         display: none;
     }
 
+    // .nav-links {
+    //     display: flex;
+    //     flex-direction: column;
+    //     position: fixed;
+    //     top: 70px;
+    //     right: -100%;
+    //     width: 250px;
+    //     height: 100%;
+    //     background: linear-gradient(to top, #8C2F99, #B86182);
+    //     padding-top: 20px;
+    //     transition: right 0.3s ease-in-out;
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     gap: 20px;
+    // }
+
+    // .nav-links.active {
+    //     right: 0;
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+
     .nav-links {
-        display: flex;
-        flex-direction: column;
         position: fixed;
         top: 70px;
-        right: -100%;
-        width: 250px;
-        height: 100%;
+        /* height of your navbar */
+        left: 0;
+        right: 0;
+        /* full-width dropdown; change to a fixed width if you prefer */
+        // width: 100%;
         background: linear-gradient(to top, #8C2F99, #B86182);
         padding-top: 20px;
-        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        /* start hidden above the viewport */
+        transform: translateY(-120%);
         opacity: 0;
         visibility: hidden;
-        gap: 20px;
+        pointer-events: none;
+
+        transition: transform 0.35s ease-in-out, opacity 0.25s ease-in-out, visibility 0s linear 0.35s;
+        will-change: transform;
+        z-index: 1000;
+        /* ensure it sits over content */
     }
 
     .nav-links.active {
-        right: 0;
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        pointer-events: auto;
+        transition: transform 0.35s ease-in-out, opacity 0.25s ease-in-out;
     }
 
     .nav-links li {

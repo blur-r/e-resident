@@ -1,0 +1,116 @@
+.preference {
+    width: 55%;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #26BAFF;
+    border-radius: 16px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: -100px;
+    z-index: 5;
+
+    @media (max-width: 938px) {
+        width: 70%;
+    }
+
+    @media (max-width: 718px) {
+        width: 80%;
+    }
+
+
+    h1 {
+        color: white;
+    }
+
+    .search-bar {
+        width: 80%;
+        border: 0.1px solid black;
+        height: 50px;
+        border-radius: 10px;
+        background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 718px) {
+            width: 90%;
+
+            input::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 700px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media(max-width: 500px) {
+            height: 40px;
+            gap: 5px;
+
+            input::placeholder {
+                font-size: 12px;
+            }
+
+        }
+
+        input,
+        button {
+            border: none;
+        }
+
+        button {
+            background-color: #26BAFF;
+            border-radius: 8px;
+            color: white;
+            padding: 8px 20px;
+            font-size: 16px;
+
+            @media (max-width: 718px) {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            @media (max-width: 500px) {
+                padding: 6px 10px;
+            }
+
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: black;
+            outline: none;
+        }
+    }
+
+    .filters {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    input,
+    select {
+        border: none;
+        height: 25px;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100px;
+    }
+
+
+}
