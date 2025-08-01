@@ -1,13 +1,18 @@
 import Hero from "../components/Hero"
 import Preference from "../components/Preference"
-import PropertyCard from "../components/PptCard"
+import Featured from "../components/Featured"
+import FeaturedPptForSaleOrRent from "../components/FeaturedPpt4SaleOrRent"
+import Reviews from "../components/Reviews"
 
 export default function Home() {
     return (
         <>
             <Hero />
             <Preference />
-            <PropertyCard />
+            {/* <Featured /> */}
+            <FeaturedPptForSaleOrRent type={"Rent"} />
+            <FeaturedPptForSaleOrRent type={"Sale"} />
+            <Reviews />
         </>
     )
 }

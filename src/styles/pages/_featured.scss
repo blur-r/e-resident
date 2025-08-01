@@ -1,0 +1,27 @@
+.featured {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .featured-ppt-info {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .featured-ppt-card {
+        display: flex;
+        gap: 20px;
+        transition: transform 0.5s ease;
+        width: 370px;
+        overflow: hidden;
+
+        .property-card {
+            flex-shrink: 0;
+        }
+    }
+}

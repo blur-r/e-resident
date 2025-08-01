@@ -1,10 +1,14 @@
 .property-card {
-    border: 1px solid #000;
+    // border: 0.px solid #000;
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 10px 20px 10px;
+
+    @media (max-width: 570px) {
+        width: 100%;
+    }
 
     .image-container {
         position: relative;
@@ -15,6 +19,10 @@
             height: 200px;
             display: block;
             border-radius: 10px;
+
+            @media (max-width: 570px) {
+                height: 300px;
+            }
         }
 
         .image-overlay {
@@ -55,7 +63,7 @@
 
     .details {
         padding-top: 10px;
-        background-color: #f9f9f9;
+        // background-color: #f9f9f9;
         display: flex;
         flex-direction: column;
         gap: 5px;

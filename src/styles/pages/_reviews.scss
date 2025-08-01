@@ -1,0 +1,112 @@
+.reviews {
+    padding: 50px;
+
+    .reviews-content {
+        display: flex;
+
+        p {
+            font-weight: 600;
+        }
+
+        .testimonial-card {
+            position: relative;
+            width: 600px;
+            height: 150px;
+            background-color: #00C4E6;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.5);
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                background-color: #ccc;
+                /* Placeholder for profile image */
+                border-radius: 10px;
+                margin-right: 20px;
+                position: absolute;
+                top: -30px;
+                left: -20px;
+                border-radius: 15px;
+                border: 2px solid red;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    border-radius: 15px;
+                }
+            }
+
+            .text-content {
+                flex: 1;
+                max-width: 400px;
+
+                .testimonial-text {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #000;
+                    line-height: 1.5;
+                    margin: 0;
+                    margin-left: 75px;
+                }
+
+                .username {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+
+            .pagination-dots {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 5px;
+
+                .dot {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #D3D3D3;
+                }
+
+                .dot.active {
+                    background-color: #808080;
+                }
+            }
+
+            .arrow {
+                position: absolute;
+                top: 62%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                // background-color: white;
+                background-color: black;
+                border: 1px solid #D3D3D3;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #808080;
+                font-size: 20px;
+            }
+
+            .left {
+                left: -20px;
+            }
+
+            .right {
+                right: -20px;
+            }
+        }
+    }
+}
