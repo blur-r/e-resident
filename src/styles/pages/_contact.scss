@@ -1,0 +1,71 @@
+.contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+
+    @media (max-width: 785px) {
+        margin-left: 30px;
+        width: 70%;
+    }
+
+    @media (max-width: 570px) {
+        // margin-left: 15px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    h1 {
+        color: #26BAFF;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .email input {
+            height: 50px;
+            border-radius: 10px;
+
+            @media (max-width: 570px) {
+                height: 30px;
+                border-radius: 5px;
+            }
+        }
+
+        .message textarea {
+            height: 245px;
+            border-radius: 10px;
+            padding: 30px;
+            font-size: 24px;
+
+            @media (max-width: 570px) {
+                height: 200px;
+            }
+        }
+
+        button {
+            background-color: #26BAFF;
+            width: 110px;
+            height: 41px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    }
+}

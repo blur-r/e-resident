@@ -1,23 +1,77 @@
 .reviews {
     padding: 50px;
 
+    @media (max-width: 785px) {
+        padding: 30px;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 570px) {
+        padding: 15px;
+
+        h1 {
+            font-size: 18px;
+        }
+    }
+
     .reviews-content {
         display: flex;
+        padding-top: 15px;
+        justify-content: space-around;
+        align-items: center;
 
-        p {
-            font-weight: 600;
+        @media (max-width: 1290px) {
+            flex-direction: column;
+        }
+
+        .review-text {
+            // font-weight: 600;
+            font-size: 24px;
+            width: 40%;
+
+            @media (max-width: 1290px) {
+                width: 100%;
+            }
+
+            @media (max-width: 785px) {
+                font-size: 17px;
+            }
+
+            @media (max-width: 570px) {
+                font-size: 15px;
+            }
+
         }
 
         .testimonial-card {
             position: relative;
             width: 600px;
             height: 150px;
-            background-color: #00C4E6;
+            background-color: #26BAFF;
             border-radius: 20px;
             box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.5);
             padding: 20px 10px;
             display: flex;
             align-items: center;
+
+            @media (max-width: 1290px) {
+                margin-top: 50px;
+                margin-right: auto;
+            }
+
+            @media (max-width: 785px) {
+                margin: 0 auto;
+                margin-top: 50px;
+                width: 80%;
+            }
+
+            @media (max-width: 500px) {
+                width: 90%;
+                height: 120px;
+            }
 
             .profile-image {
                 width: 100px;
@@ -30,7 +84,13 @@
                 top: -30px;
                 left: -20px;
                 border-radius: 15px;
-                border: 2px solid red;
+
+                @media (max-width: 500px) {
+                    width: 60px;
+                    height: 60px;
+                    top: -20px;
+                    left: -15px;
+                }
 
                 img {
                     width: 100%;
@@ -42,24 +102,29 @@
 
             .text-content {
                 flex: 1;
-                max-width: 400px;
 
                 .testimonial-text {
                     font-family: 'Roboto', sans-serif;
                     font-size: 16px;
-                    color: #000;
+                    color: #fff;
                     line-height: 1.5;
                     margin: 0;
-                    margin-left: 75px;
+                    margin-left: 95px;
+                    font-style: italic;
+
+                    @media (max-width: 500px) {
+                        margin-left: 40px;
+                    }
                 }
 
                 .username {
                     font-family: 'Roboto', sans-serif;
                     font-size: 14px;
                     font-weight: bold;
-                    color: #000;
+                    color: #fff;
                     margin-top: 10px;
-                    text-align: center;
+                    // text-align: left;
+                    margin-left: 25px;
                 }
             }
 
@@ -89,8 +154,7 @@
                 transform: translateY(-50%);
                 width: 40px;
                 height: 40px;
-                // background-color: white;
-                background-color: black;
+                background-color: white;
                 border: 1px solid #D3D3D3;
                 border-radius: 50%;
                 display: flex;
