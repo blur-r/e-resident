@@ -1,0 +1,182 @@
+.rent {
+    .rent-hero {
+        width: 100vw;
+        height: 350px;
+        background-image: url(/images/bgImg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .rent-h1 {
+            color: white;
+            text-align: center;
+            line-height: 300px;
+            font-size: 40px;
+
+            @media (max-width: 578px) {
+                font-size: 30px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 25px;
+            }
+        }
+
+        .search-bar {
+            width: 50%;
+            // border: 0.1px solid black;
+            height: 50px;
+            border-radius: 10px;
+            background-color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+            margin-top: -50px;
+
+            @media (max-width: 718px) {
+                width: 70%;
+
+                input::placeholder {
+                    font-size: 14px;
+                }
+            }
+
+            @media(max-width: 700px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            @media(max-width: 500px) {
+                height: 40px;
+                gap: 5px;
+
+                input::placeholder {
+                    font-size: 12px;
+                }
+
+            }
+
+            input,
+            button {
+                border: none;
+            }
+
+            button {
+                background-color: #26BAFF;
+                border-radius: 8px;
+                color: white;
+                padding: 8px 20px;
+                font-size: 16px;
+
+                @media (max-width: 718px) {
+                    padding: 8px 10px;
+                    font-size: 14px;
+                }
+
+                @media (max-width: 500px) {
+                    padding: 6px 10px;
+                }
+
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                color: black;
+                outline: none;
+            }
+        }
+    }
+
+    .properties {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 100px;
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+
+        @media (max-width: 1200px) {
+            gap: 50px;
+        }
+
+        @media (max-width: 1050px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 657px) {
+            grid-template-columns: 1fr;
+            // justify-content: center;
+            // align-items: center;
+
+            place-items: center;
+
+            .property-card {
+                width: 90%;
+
+                img {
+                    height: 300px;
+                }
+            }
+
+        }
+
+    }
+
+    .see-more {
+        text-align: center;
+
+        @media (max-width: 1049px) {
+            margin-top: 20px;
+        }
+    }
+
+    .similar {
+        color: black;
+        font-size: 40px;
+        padding-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        // @media (max-width: 1000px) {
+        //     font-size: 300px;
+        // }
+
+        @media (max-width: 578px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 25px;
+        }
+    }
+
+    .similar-ppt {
+        display: flex;
+        width: 90%;
+        gap: 20px;
+        // overflow: hidden;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+
+        .property-card {
+            flex-shrink: 0;
+        }
+
+
+    }
+
+}

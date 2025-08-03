@@ -4,6 +4,7 @@ import Featured from "../components/Featured"
 import FeaturedPptForSaleOrRent from "../components/FeaturedPpt4SaleOrRent"
 import Reviews from "../components/Reviews"
 import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <FeaturedPptForSaleOrRent type={"Sale"} />
             <Reviews />
             <Contact />
+            <Footer />
         </>
     )
 }
