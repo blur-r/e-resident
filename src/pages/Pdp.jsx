@@ -27,10 +27,25 @@ function ProductDetailPage() {
 
                 <div className="pdp-detail-img">
                     <div className="pdp-img">
-                        <img src="" alt="" />
+                        <img src="/images/bgImg.png" alt="" />
+                        <div className="pdp-image-overlay">
+                            <button className="pdp-nav-button pdp-left">&lt;</button>
+                            <button className="pdp-nav-button pdp-right">&gt;</button>
+                        </div>
                     </div>
                     <div className="pdp-detail">
-                        <div></div>
+                        <div className="checkout-form">
+                            <p>e-Resident</p> <p>Verified</p>
+                            <form action="">
+                                <input type="text" placeholder="Full Name:" />
+                                <input type="text" placeholder="Email" />
+                                <input type="text" placeholder="Phone No:" />
+                                <div className="checkbox">
+                                    <input type="checkbox" name="" id="" />By ticking the box and continuing, you agree with <a href="#">e-Resident's Terms & Conditions</a>
+                                </div>
+                                <button type="submit">Checkout</button>
+                            </form>
+                        </div>
                         <div></div>
                     </div>
                 </div>

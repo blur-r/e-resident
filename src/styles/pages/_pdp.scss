@@ -112,5 +112,78 @@
         .short {
             color: #26BAFF;
         }
+
+        .pdp-detail-img {
+            display: flex;
+            width: 100%;
+            padding-top: 20px;
+            justify-content: center;
+            gap: 50px;
+
+            .pdp-img {
+                width: 60%;
+                position: relative;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    height: 500px;
+                    border-radius: 10px;
+                }
+
+                .pdp-image-overlay {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 10px;
+                    transform: translateY(-50%);
+
+                    .pdp-nav-button {
+                        background-color: #f2f2f2;
+                        color: black;
+                        border: none;
+                        // padding: 11px;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        z-index: 5;
+                        font-weight: bolder;
+                        font-size: 30px;
+                        height: 50px;
+                        width: 50px;
+                        text-align: center;
+                    }
+
+                    .pdp-left {
+                        margin-left: -30px;
+                    }
+
+                    .pdp-right {
+                        margin-right: -30px;
+                        z-index: 50;
+                    }
+
+                }
+            }
+
+            .pdp-detail {
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+
+                .checkout-form {
+                    display: flex;
+                    flex-direction: column;
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+
+            }
+        }
     }
 }
