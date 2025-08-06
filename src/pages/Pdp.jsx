@@ -1,4 +1,6 @@
 import Navbar from "../components/Navigation"
+import PropertyCard from "../components/PptCard"
+import Footer from "../components/Footer"
 
 function ProductDetailPage() {
     return (
@@ -45,12 +47,74 @@ function ProductDetailPage() {
                                 </div>
                                 <button type="submit">Checkout</button>
                             </form>
+                            <button type="">Make Enquries</button>
                         </div>
-                        <div></div>
+                        <div className="ppt-info">
+                            <div>
+                                <i className="fas fa-bed"></i>
+                                <p>3 beds</p>
+                            </div>
+                            <div>
+                                <i className="fas fa-bath"></i>
+                                <p>3 baths</p>
+                            </div>
+                            <div>
+                                <i className="fas fa-toilet"></i>
+                                <p>3 toilet</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div className="description">
+                    <h1>Description</h1>
+
+                    <div className="description-container">
+                        <h2>Luxury 3 Bedroom Detached Duplex – Comfort and Luxury all at the same time</h2>
+                        <p className="des-location">Ikoyi, Lagos state.<br />2 Units Left</p>
+                        <p className="tag">Enjoy a spacious home, comfort and luxury defined.</p>
+
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>All Rooms Ensuite – Ultimate comfort & privacy</li>
+                            <li>Fully Fitted Kitchen – Modern & stylish</li>
+                            <li>Boy’s Quarters (BQ) – Extra convenience</li>
+                            <li>Spacious Family Lounge – Perfect for bonding moments</li>
+                            <li>Luxury Finishes – Chandeliers, POP ceilings & walk-in closets</li>
+                            <li>Lavish Bathrooms – Bathtubs, walk-in showers & water heaters</li>
+                            <li>Ample Parking & Top Security – Peace of mind guaranteed</li>
+                        </ul>
+
+                        <h3 className="settings">This property is in the luxury settings of Ikoyi, which has all necessary facilities such as:</h3>
+                        <ul>
+                            <li>Good Road</li>
+                            <li>Hospitals</li>
+                            <li>Police station</li>
+                            <li>Great schools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="des-sub">
+                    <p>Receive alerts for new properties</p>
+                    <button>Subscribe</button>
+                </div>
+
+                <div className="des-similar">
+                    <h1 className="des-similar-header">Similar Properties for Rent</h1>
+                    <div className="des-similar-ppt">
+                        <PropertyCard />
+                        <PropertyCard />
+                        <PropertyCard />
+                        <PropertyCard />
+                        <PropertyCard />
+                        <PropertyCard />
+                    </div>
+                </div>
+
             </div>
 
+            <Footer />
         </div>
     )
 }
