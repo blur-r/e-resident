@@ -4,6 +4,7 @@ import Rent from "./pages/Rent";
 import Buy from "./pages/Buy";
 import Shortlet from "./pages/Shortlet";
 import ProductDetailPage from "./pages/Pdp";
+import Checkout from "./pages/Checkout";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/buy" element={<Buy />} />
                 <Route path="/shortlet" element={<Shortlet />} />
                 <Route path="/pdp" element={<ProductDetailPage />} />
+                <Route path="/checkout" element={<Checkout />} />
             </Routes>
 
         </>
