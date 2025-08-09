@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Hero />
             <Preference />
-            {/* <Featured /> */}
+            <Featured />
             <FeaturedPptForSaleOrRent type={"Rent"} />
             <FeaturedPptForSaleOrRent type={"Sale"} />
             <Reviews />
