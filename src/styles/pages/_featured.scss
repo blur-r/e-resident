@@ -76,6 +76,7 @@
         width: 370px;
         overflow: hidden;
         position: relative;
+        padding: 20px;
 
         >div {
 
@@ -84,7 +85,10 @@
                 width: 250px;
                 flex-shrink: 0;
                 // background-color: #9a1515;
+                background-color: white;
                 position: relative;
+                overflow: hidden;
+                padding: 10px;
 
                 img {
                     width: 100%;
@@ -100,14 +104,14 @@
 
             &:nth-child(3) {
                 .property-card {
-                    margin-left: -250px;
+                    margin-left: -240px;
                     z-index: 2;
                 }
             }
 
             &:nth-child(4) {
                 .property-card {
-                    margin-left: -250px;
+                    margin-left: -240px;
                     z-index: 300;
                 }
             }
