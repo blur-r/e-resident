@@ -7,6 +7,7 @@ import ProductDetailPage from "./pages/Pdp";
 import Checkout from "./pages/Checkout";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
+import ProfileSettings from "./pages/Profile";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/signin" element={<Signin />} />
+                <Route path="/profile" element={<ProfileSettings />} />
             </Routes>
 
         </>
