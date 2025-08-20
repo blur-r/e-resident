@@ -86,7 +86,7 @@ function Checkout() {
                             <div className="debit">
                                 <input type="number" placeholder="Card Number" className="card-num" />
                                 <div className="debit-form-group">
-                                    <input type="date" placeholder="MM/YY" />
+                                    <input type="number" placeholder="MM/YY" />
                                     <input type="number" placeholder="CVV" />
                                 </div>
                                 <div className="save-card">
