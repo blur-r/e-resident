@@ -27,14 +27,14 @@ function Navbar() {
                     <li><a className="nav-link" href="#service">RENT</a></li>
                     <li><a className="nav-link" href="#gallery">SHORTLET</a></li> */}
                     <div className="sign">
-                        <button className="sign-up"><a href="">Sign up</a></button>
-                        <button className="sign-in"><a href="">Log in</a></button>
+                        <button className="sign-up"><Link to="/signup">Sign Up</Link></button>
+                        <button className="sign-in"><Link to="/signin">Log In</Link></button>
                     </div>
 
                 </ul>
                 <div className="sign">
-                    <button className="sign-up"><a href="">Sign up</a></button>
-                    <button className="sign-in"><a href="">Log in</a></button>
+                    <button className="sign-up"><Link to="/signup">Sign Up</Link></button>
+                    <button className="sign-in"><Link to="/signin">Log In</Link></button>
                 </div>
             </nav>
 

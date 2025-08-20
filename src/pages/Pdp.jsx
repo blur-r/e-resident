@@ -1,6 +1,7 @@
 import Navbar from "../components/Navigation"
 import PropertyCard from "../components/PptCard"
 import Footer from "../components/Footer"
+import { Link } from "react-router-dom";
 
 function ProductDetailPage() {
     return (
@@ -45,7 +46,7 @@ function ProductDetailPage() {
                                 <div className="checkbox">
                                     <input type="checkbox" name="" id="" />By ticking the box and continuing, you agree with <a href="#">e-Resident's Terms & Conditions</a>
                                 </div>
-                                <button type="submit">Checkout</button>
+                                <button type="submit"><Link to="/checkout">Checkout</Link></button>
                             </form>
                             <button type="">Make Enquries</button>
                         </div>
