@@ -346,38 +346,48 @@
         .description {
             margin-top: 40px;
 
-            h1 {
-                margin-bottom: 10px;
-            }
-
-            h2 {
-                margin-bottom: 10px;
-            }
-
-            .des-location {
-                font-size: 20px;
-                font-weight: 500;
-            }
-
-            .tag {
-                margin: 10px 0;
-                font-style: italic;
-            }
-
-            ul {
-                list-style: none;
-
-                li {
-                    &::before {
-                        content: "- ";
-                        margin-right: 5px;
-                    }
+            @media (max-width: 500px) {
+                h1 {
+                    font-size: 30px;
                 }
             }
 
-            .settings {
-                margin-top: 10px;
+            .description-container {
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
 
+                @media (max-width: 500px) {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+
+                .des-location {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .tag {
+                    font-style: italic;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        &::before {
+                            content: "- ";
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .settings {
+                    // margin-top: 10px;
+
+                }
             }
         }
 
@@ -444,7 +454,11 @@
 
                 .property-card {
                     flex-shrink: 0;
-                    width: 320px;
+                    width: 310px;
+
+                    img {
+                        height: 240px;
+                    }
                 }
 
             }
