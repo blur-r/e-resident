@@ -117,9 +117,6 @@
 
         @media (max-width: 657px) {
             grid-template-columns: 1fr;
-            // justify-content: center;
-            // align-items: center;
-
             place-items: center;
 
             .property-card {
@@ -149,10 +146,6 @@
         margin-top: 30px;
         margin-bottom: 10px;
 
-        // @media (max-width: 1000px) {
-        //     font-size: 300px;
-        // }
-
         @media (max-width: 578px) {
             font-size: 30px;
         }
@@ -166,7 +159,6 @@
         display: flex;
         width: 90%;
         gap: 20px;
-        // overflow: hidden;
         overflow-x: auto;
         overflow-y: hidden;
         margin: 0 auto;

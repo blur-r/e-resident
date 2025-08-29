@@ -23,7 +23,6 @@
 
         .search-bar {
             width: 50%;
-            // border: 0.1px solid black;
             height: 50px;
             border-radius: 10px;
             background-color: white;
@@ -117,9 +116,6 @@
 
         @media (max-width: 657px) {
             grid-template-columns: 1fr;
-            // justify-content: center;
-            // align-items: center;
-
             place-items: center;
 
             .property-card {
@@ -162,7 +158,6 @@
         display: flex;
         width: 90%;
         gap: 20px;
-        // overflow: hidden;
         overflow-x: auto;
         overflow-y: hidden;
         margin: 0 auto;

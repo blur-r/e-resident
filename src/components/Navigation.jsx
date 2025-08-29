@@ -22,10 +22,6 @@ function Navbar() {
                     <li><Link to="/buy" className="nav-link">BUY</Link></li>
                     <li><Link to="/rent" className="nav-link">RENT</Link></li>
                     <li><Link to="/shortlet" className="nav-link">SHORTLET</Link></li>
-                    {/* <li><a className="nav-link" href="#home">HOME</a></li>
-                    <li><a className="nav-link" href="#about">BUY</a></li> 
-                    <li><a className="nav-link" href="#service">RENT</a></li>
-                    <li><a className="nav-link" href="#gallery">SHORTLET</a></li> */}
                     <div className="sign">
                         <button className="sign-up"><Link to="/signup">Sign Up</Link></button>
                         <button className="sign-in"><Link to="/signin">Log In</Link></button>
