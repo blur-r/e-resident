@@ -1,8 +1,18 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
+
 function Signin() {
+    const [showPassword, setShowPassword] = useState(false);
+    const [password, setPassword] = useState("");
+
     return (
         <div className="signin">
             <div className="signin-img-container">
-                <i className="fas fa-arrow-left"></i>
+                <Link to="/">
+                    <i className="fas fa-arrow-left"></i>
+                </Link>
+
             </div>
 
             <div className="signin-form">
@@ -12,12 +22,24 @@ function Signin() {
                         <input type="text" placeholder="Username" required />
                     </div>
                     <div class="form-group password-container">
-                        <input type="password" placeholder="Password" required />
-                        <span class="password-toggle">👁️</span>
+                        {/* <input type="password" placeholder="Password" required /> */}
+                        {/* <span class="password-toggle">👁️</span> */}
+                        <input
+                            type={showPassword ? "text" : "password"} // toggles visibility
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+
+                        <span
+                            onClick={() => setShowPassword(!showPassword)}
+                            class="password-toggle">
+                            {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                        </span>
                     </div>
                     <a href="#" class="fogot-password">Forgot Password?</a>
                     <button type="submit" class="signup-btn">Login</button>
-                    <a href="#" className="no-account">Don’t have an account? <span>Sign Up Instead!</span> </a>
+                    <a href="#" className="no-account">Don't have an account? <span>Sign Up Instead!</span> </a>
                     <div class="or-line">
                         <hr /><span>or</span><hr />
                     </div>

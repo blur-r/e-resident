@@ -1,8 +1,17 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
+
 function Signup() {
+    const [showPassword, setShowPassword] = useState(false);
+    const [password, setPassword] = useState("");
+
     return (
         <div className="signup">
             <div className="signup-img-container">
-                <i className="fas fa-arrow-left"></i>
+                <Link to='/'>
+                    <i className="fas fa-arrow-left"></i>
+                </Link>
             </div>
 
             <div className="signup-form">
@@ -21,8 +30,20 @@ function Signup() {
                         <input type="email" placeholder="Email" required />
                     </div>
                     <div class="form-group password-container">
-                        <input type="password" placeholder="Password" required />
-                        <span class="password-toggle">👁️</span>
+                        {/* <input type="password" placeholder="Password" required /> */}
+                        {/* <span class="password-toggle">👁️</span> */}
+                        <input
+                            type={showPassword ? "text" : "password"} // toggles visibility
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+
+                        <span
+                            onClick={() => setShowPassword(!showPassword)}
+                            class="password-toggle">
+                            {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                        </span>
                     </div>
                     <a href="#" class="login-link">Have an account? Log in instead!</a>
                     <button type="submit" class="signup-btn">Sign Up</button>
